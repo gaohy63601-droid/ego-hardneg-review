@@ -1,0 +1,880 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Natural hard-negative review</title><style>
+body{font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:1100px;margin:1.5rem auto;padding:0 1rem;color:#1a1a1a}
+h1{font-size:1.3rem} .lead{color:#555}
+#bar{position:sticky;top:0;background:#fff;padding:.5rem 0;border-bottom:1px solid #eee;z-index:5}
+#exp{font:inherit;padding:.4rem .9rem;border:1px solid #4f6bed;background:#4f6bed;color:#fff;border-radius:8px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:1rem;margin-top:1rem}
+.card{border:1px solid #e2e2e2;border-radius:12px;padding:.7rem;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.card video{width:100%;border-radius:8px;background:#000}
+table{border-collapse:collapse;width:100%;font-size:.82rem;margin:.4rem 0}
+td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#888;width:6.5rem}
+.controls{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font-size:.82rem}
+.controls select{font:inherit} .f-note{width:100%;min-height:2.6rem;font:inherit;font-size:.82rem;border:1px solid #e0e0e0;border-radius:6px;padding:.3rem}
+</style></head><body>
+<h1>Natural hard-negative review &mdash; real HOT3D footage</h1>
+<p class="lead">Each card is a <b>real</b> clip (no corruption) surfaced by an ambiguity signal.
+Watch the actual video and judge from the physical interaction (contact, grasp, timing, gaze):
+is it a genuine hard/near-miss case? Mark keep/discard, clear/ambiguous, fix the category, add a note.
+Your labels are saved in this browser; Export writes a CSV.</p>
+<div id="bar"><button id="exp">Export labels (CSV)</button> <span id="cnt"></span></div>
+<div class="grid"><div class="card" data-id="P0010_573b2de6_976_gaze-hand coord">
+<video src="clips/c0.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 976</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.51 · contact=0.60m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_80_gaze-hand coord">
+<video src="clips/c1.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 80</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.49 · contact=0.29m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_96_gaze-hand coord">
+<video src="clips/c2.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 96</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.47 · contact=0.77m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_736_gaze-hand coord">
+<video src="clips/c3.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 736</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.47 · contact=0.55m · switch=0.09</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_800_gaze-hand coord">
+<video src="clips/c4.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 800</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.46 · contact=0.36m · switch=0.25</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_816_gaze-hand coord">
+<video src="clips/c5.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 816</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.43 · contact=0.58m · switch=0.12</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_752_gaze-hand coord">
+<video src="clips/c6.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 752</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.42 · contact=0.55m · switch=0.19</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_176_gaze-hand coord">
+<video src="clips/c7.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 176</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.41 · contact=0.51m · switch=0.16</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_1392_gaze-hand coord">
+<video src="clips/c8.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 1392</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.36 · contact=0.26m · switch=0.03</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_192_gaze-hand coord">
+<video src="clips/c9.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 192</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.35 · contact=0.68m · switch=0.09</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_704_gaze-hand coord">
+<video src="clips/c10.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 704</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.33 · contact=0.39m · switch=0.41</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_688_gaze-hand coord">
+<video src="clips/c11.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 688</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.33 · contact=0.39m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_32_gaze-hand coord">
+<video src="clips/c12.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 32</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.30 · contact=0.63m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_8ff3e5c4_368_gaze-hand coord">
+<video src="clips/c13.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>cellphone</td></tr>
+<tr><td>seq / start</td><td>P0010_8ff3e5c4 @ 368</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.30 · contact=0.42m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_8ff3e5c4_352_gaze-hand coord">
+<video src="clips/c14.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>cellphone</td></tr>
+<tr><td>seq / start</td><td>P0010_8ff3e5c4 @ 352</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.30 · contact=0.42m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_112_gaze-hand coord">
+<video src="clips/c15.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 112</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.29 · contact=0.60m · switch=0.06</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_848_gaze-hand coord">
+<video src="clips/c16.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 848</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.28 · contact=0.46m · switch=0.12</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_992_gaze-hand coord">
+<video src="clips/c17.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 992</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.27 · contact=0.37m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_8ff3e5c4_336_gaze-hand coord">
+<video src="clips/c18.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>cellphone</td></tr>
+<tr><td>seq / start</td><td>P0010_8ff3e5c4 @ 336</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.26 · contact=0.49m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_1376_gaze-hand coord">
+<video src="clips/c19.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>gaze-hand coord</b></td></tr>
+<tr><td>why flagged</td><td>gaze drifts off the object</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 1376</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.26 · contact=0.48m · switch=0.09</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option selected>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_6d15aa57_192_contact/timing">
+<video src="clips/c20.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>birdhouse_toy</td></tr>
+<tr><td>seq / start</td><td>P0010_6d15aa57 @ 192</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.28 · contact=0.81m · switch=0.44</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_784_contact/timing">
+<video src="clips/c21.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>coffee_pot</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 784</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.63 · contact=0.79m · switch=0.47</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_976_contact/timing">
+<video src="clips/c22.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>mug_white</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 976</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.74 · contact=0.77m · switch=0.38</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_96_contact/timing">
+<video src="clips/c23.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 96</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.47 · contact=0.77m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_5f2583e0_656_contact/timing">
+<video src="clips/c24.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>vase</td></tr>
+<tr><td>seq / start</td><td>P0009_5f2583e0 @ 656</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.81 · contact=0.75m · switch=0.34</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_720_contact/timing">
+<video src="clips/c25.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>mug_white</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 720</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.74 · contact=0.70m · switch=0.38</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_192_contact/timing">
+<video src="clips/c26.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 192</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.35 · contact=0.68m · switch=0.09</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_6d15aa57_176_contact/timing">
+<video src="clips/c27.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>birdhouse_toy</td></tr>
+<tr><td>seq / start</td><td>P0010_6d15aa57 @ 176</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.30 · contact=0.67m · switch=0.25</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_927973d7_592_contact/timing">
+<video src="clips/c28.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>carton_oj</td></tr>
+<tr><td>seq / start</td><td>P0009_927973d7 @ 592</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.91 · contact=0.64m · switch=0.25</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_927973d7_1072_contact/timing">
+<video src="clips/c29.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>potato_masher</td></tr>
+<tr><td>seq / start</td><td>P0009_927973d7 @ 1072</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.84 · contact=0.64m · switch=0.22</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_0e02bf39_464_contact/timing">
+<video src="clips/c30.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>plate_bamboo</td></tr>
+<tr><td>seq / start</td><td>P0009_0e02bf39 @ 464</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.92 · contact=0.64m · switch=0.44</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_32_contact/timing">
+<video src="clips/c31.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 32</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.30 · contact=0.63m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_768_contact/timing">
+<video src="clips/c32.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>mug_white</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 768</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.65 · contact=0.62m · switch=0.28</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_6d15aa57_384_contact/timing">
+<video src="clips/c33.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>birdhouse_toy</td></tr>
+<tr><td>seq / start</td><td>P0010_6d15aa57 @ 384</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.07 · contact=0.60m · switch=0.22</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_112_contact/timing">
+<video src="clips/c34.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 112</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.29 · contact=0.60m · switch=0.06</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_976_contact/timing">
+<video src="clips/c35.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 976</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.51 · contact=0.60m · switch=0.00</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_e481fd15_816_contact/timing">
+<video src="clips/c36.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>aria_small</td></tr>
+<tr><td>seq / start</td><td>P0010_e481fd15 @ 816</td></tr>
+<tr><td>signals</td><td>gaze_align=-0.43 · contact=0.58m · switch=0.12</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_736_contact/timing">
+<video src="clips/c37.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>mug_white</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 736</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.55 · contact=0.57m · switch=0.22</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_752_contact/timing">
+<video src="clips/c38.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>mug_white</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 752</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.52 · contact=0.57m · switch=0.25</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_927973d7_1008_contact/timing">
+<video src="clips/c39.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>contact/timing</b></td></tr>
+<tr><td>why flagged</td><td>hand stays far from the object (loose contact)</td></tr>
+<tr><td>object</td><td>potato_masher</td></tr>
+<tr><td>seq / start</td><td>P0009_927973d7 @ 1008</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.82 · contact=0.56m · switch=0.25</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option>target/object</option><option selected>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_99385ad8_432_target/object">
+<video src="clips/c40.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>mug_white</td></tr>
+<tr><td>seq / start</td><td>P0010_99385ad8 @ 432</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.69 · contact=0.23m · switch=0.75</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_384_target/object">
+<video src="clips/c41.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>keyboard</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 384</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.09 · contact=0.25m · switch=0.75</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_1b21bb01_640_target/object">
+<video src="clips/c42.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>carton_oj</td></tr>
+<tr><td>seq / start</td><td>P0009_1b21bb01 @ 640</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.69 · contact=0.22m · switch=0.69</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_1b21bb01_1008_target/object">
+<video src="clips/c43.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>carton_milk</td></tr>
+<tr><td>seq / start</td><td>P0009_1b21bb01 @ 1008</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.56 · contact=0.29m · switch=0.69</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_5f2583e0_384_target/object">
+<video src="clips/c44.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>plate_bamboo</td></tr>
+<tr><td>seq / start</td><td>P0009_5f2583e0 @ 384</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.80 · contact=0.24m · switch=0.69</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_88a58b3b_992_target/object">
+<video src="clips/c45.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>puzzle_toy</td></tr>
+<tr><td>seq / start</td><td>P0009_88a58b3b @ 992</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.64 · contact=0.28m · switch=0.69</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_9e03121a_688_target/object">
+<video src="clips/c46.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>bottle_ranch</td></tr>
+<tr><td>seq / start</td><td>P0009_9e03121a @ 688</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.79 · contact=0.24m · switch=0.69</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_432_target/object">
+<video src="clips/c47.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>mouse</td></tr>
+<tr><td>seq / start</td><td>P0010_573b2de6 @ 432</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.23 · contact=0.14m · switch=0.69</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_02511c2f_1120_target/object">
+<video src="clips/c48.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>puzzle_toy</td></tr>
+<tr><td>seq / start</td><td>P0009_02511c2f @ 1120</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.58 · contact=0.14m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_0e02bf39_112_target/object">
+<video src="clips/c49.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>vase</td></tr>
+<tr><td>seq / start</td><td>P0009_0e02bf39 @ 112</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.83 · contact=0.22m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_5bb7cc2a_1168_target/object">
+<video src="clips/c50.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>dumbbell_5lb</td></tr>
+<tr><td>seq / start</td><td>P0009_5bb7cc2a @ 1168</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.87 · contact=0.19m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_5f2583e0_304_target/object">
+<video src="clips/c51.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>plate_bamboo</td></tr>
+<tr><td>seq / start</td><td>P0009_5f2583e0 @ 304</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.77 · contact=0.24m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_88a58b3b_512_target/object">
+<video src="clips/c52.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>plate_bamboo</td></tr>
+<tr><td>seq / start</td><td>P0009_88a58b3b @ 512</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.84 · contact=0.24m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c0caf6c_656_target/object">
+<video src="clips/c53.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>potato_masher</td></tr>
+<tr><td>seq / start</td><td>P0009_8c0caf6c @ 656</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.71 · contact=0.17m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c0caf6c_720_target/object">
+<video src="clips/c54.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>bottle_ranch</td></tr>
+<tr><td>seq / start</td><td>P0009_8c0caf6c @ 720</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.74 · contact=0.22m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c0caf6c_1072_target/object">
+<video src="clips/c55.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>spatula_red</td></tr>
+<tr><td>seq / start</td><td>P0009_8c0caf6c @ 1072</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.86 · contact=0.18m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_464_target/object">
+<video src="clips/c56.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>plate_bamboo</td></tr>
+<tr><td>seq / start</td><td>P0009_8c95667c @ 464</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.84 · contact=0.19m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_911a4ba5_496_target/object">
+<video src="clips/c57.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>whiteboard_eraser</td></tr>
+<tr><td>seq / start</td><td>P0009_911a4ba5 @ 496</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.84 · contact=0.04m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_911a4ba5_1072_target/object">
+<video src="clips/c58.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>whiteboard_eraser</td></tr>
+<tr><td>seq / start</td><td>P0009_911a4ba5 @ 1072</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.70 · contact=0.05m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div><div class="card" data-id="P0009_b1e71d7f_176_target/object">
+<video src="clips/c59.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>auto-category</td><td><b>target/object</b></td></tr>
+<tr><td>why flagged</td><td>nearest object keeps switching (ambiguous target)</td></tr>
+<tr><td>object</td><td>puzzle_toy</td></tr>
+<tr><td>seq / start</td><td>P0009_b1e71d7f @ 176</td></tr>
+<tr><td>signals</td><td>gaze_align=+0.77 · contact=0.05m · switch=0.66</td></tr>
+</table>
+<div class="controls">
+ <label>keep? <select class="f-keep"><option value="">?</option><option>keep</option><option>discard</option></select></label>
+ <label>clarity <select class="f-clar"><option value="">?</option><option>clear</option><option>ambiguous</option></select></label>
+ <label>category <select class="f-cat"><option selected>target/object</option><option>contact/timing</option><option>cross-clip semantic</option><option>gaze-hand coord</option></select></label>
+ <textarea class="f-note" placeholder="note (why it is / isn't a real hard case)"></textarea>
+</div></div></div>
+<script>
+var KEY="nat_hardneg";var store=JSON.parse(localStorage.getItem(KEY)||"{}");
+function save(){localStorage.setItem(KEY,JSON.stringify(store));cnt();}
+function cnt(){var k=0;document.querySelectorAll('.card').forEach(function(c){if((store[c.dataset.id]||{}).keep)k++;});
+ document.getElementById('cnt').textContent=k+' / '+document.querySelectorAll('.card').length+' labelled';}
+document.querySelectorAll('.card').forEach(function(c){var id=c.dataset.id;var s=store[id]||{};
+ var kp=c.querySelector('.f-keep'),cl=c.querySelector('.f-clar'),ct=c.querySelector('.f-cat'),nt=c.querySelector('.f-note');
+ if(s.keep)kp.value=s.keep; if(s.clarity)cl.value=s.clarity; if(s.cat)ct.value=s.cat; if(s.note)nt.value=s.note;
+ function up(){store[id]={keep:kp.value,clarity:cl.value,cat:ct.value,note:nt.value};save();}
+ [kp,cl,ct,nt].forEach(function(el){el.addEventListener('change',up);el.addEventListener('input',up);});});
+document.getElementById('exp').addEventListener('click',function(){
+ var rows=[["id","keep","clarity","category","note"]];
+ document.querySelectorAll('.card').forEach(function(c){var s=store[c.dataset.id]||{};
+  rows.push([c.dataset.id,s.keep||"",s.clarity||"",s.cat||"",s.note||""]);});
+ var csv=rows.map(function(r){return r.map(function(x){return '"'+String(x).replace(/"/g,'""')+'"';}).join(",");}).join("\n");
+ var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"}));a.download="nat_hardneg_labels.csv";a.click();});
+cnt();
+</script></body></html>
