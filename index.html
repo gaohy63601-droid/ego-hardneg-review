@@ -21,232 +21,8 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
 标注自动存在本浏览器;点导出生成 CSV。
 <br>每段视频都叠了 <span style="color:#f00">●红点=视线落点</span>(官方眼动投影),据此判断人在看什么、和手/物体的交互一不一致。被交互的物体请直接看视频判断(物体框因遮挡时官方标注会飘,已不显示)。</p>
 <div id="bar"><button id="exp">导出标注 (CSV)</button> <span id="cnt"></span></div>
-<div class="grid"><div class="card" data-id="P0010_6d15aa57_192_contact/timing mismatch">
+<div class="grid"><div class="card" data-id="P0009_0e02bf39_112_wrong/ambiguous active object">
 <video src="clips/c0.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>鸟屋玩具(birdhouse_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_6d15aa57 @ 192</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.60 · 接触=0.81m · 切换=0.44</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_8ff3e5c4_0_gaze-hand coordination mismatch">
-<video src="clips/c1.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>视线-手协调错 (gaze-hand coordination mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手在物体上,但视线偏离被操作物体</td></tr>
-<tr><td>物体</td><td>白马克杯(mug_white)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_8ff3e5c4 @ 0</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.03 · 接触=0.09m · 切换=0.00</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_573b2de6_384_wrong/ambiguous active object">
-<video src="clips/c2.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>键盘(keyboard)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_573b2de6 @ 384</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.32 · 接触=0.25m · 切换=0.75</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_99385ad8_432_wrong/ambiguous active object">
-<video src="clips/c3.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>白马克杯(mug_white)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_99385ad8 @ 432</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.87 · 接触=0.23m · 切换=0.75</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_8c95667c_784_contact/timing mismatch">
-<video src="clips/c4.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>咖啡壶(coffee_pot)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_8c95667c @ 784</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.83 · 接触=0.79m · 切换=0.47</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_8c95667c_976_contact/timing mismatch">
-<video src="clips/c5.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>白马克杯(mug_white)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_8c95667c @ 976</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.77m · 切换=0.38</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_e481fd15_96_contact/timing mismatch">
-<video src="clips/c6.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>Aria眼镜(小)(aria_small)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_e481fd15 @ 96</td></tr>
-<tr><td>信号值</td><td>视线对齐=-0.07 · 接触=0.77m · 切换=0.00</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_5f2583e0_656_contact/timing mismatch">
-<video src="clips/c7.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>花瓶(vase)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_5f2583e0 @ 656</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.98 · 接触=0.75m · 切换=0.34</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_8c95667c_720_contact/timing mismatch">
-<video src="clips/c8.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>白马克杯(mug_white)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_8c95667c @ 720</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.94 · 接触=0.70m · 切换=0.38</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_1b21bb01_640_wrong/ambiguous active object">
-<video src="clips/c9.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>橙汁盒(carton_oj)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_1b21bb01 @ 640</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.88 · 接触=0.22m · 切换=0.69</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_1b21bb01_1008_wrong/ambiguous active object">
-<video src="clips/c10.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>牛奶盒(carton_milk)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_1b21bb01 @ 1008</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.65 · 接触=0.29m · 切换=0.69</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_5f2583e0_384_wrong/ambiguous active object">
-<video src="clips/c11.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_5f2583e0 @ 384</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.24m · 切换=0.69</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_88a58b3b_992_wrong/ambiguous active object">
-<video src="clips/c12.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_88a58b3b @ 992</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.81 · 接触=0.28m · 切换=0.69</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_9e03121a_688_wrong/ambiguous active object">
-<video src="clips/c13.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>沙拉酱瓶(bottle_ranch)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_9e03121a @ 688</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.85 · 接触=0.24m · 切换=0.69</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_e481fd15_192_contact/timing mismatch">
-<video src="clips/c14.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>Aria眼镜(小)(aria_small)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_e481fd15 @ 192</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.03 · 接触=0.68m · 切换=0.09</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_02511c2f_1120_wrong/ambiguous active object">
-<video src="clips/c15.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_02511c2f @ 1120</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.73 · 接触=0.14m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_0e02bf39_112_wrong/ambiguous active object">
-<video src="clips/c16.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -259,22 +35,8 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_5bb7cc2a_1168_wrong/ambiguous active object">
-<video src="clips/c17.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>哑铃(5磅)(dumbbell_5lb)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_5bb7cc2a @ 1168</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.88 · 接触=0.19m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_5f2583e0_304_wrong/ambiguous active object">
-<video src="clips/c18.mp4" controls loop muted playsinline></video>
+<video src="clips/c1.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -287,22 +49,8 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_88a58b3b_512_wrong/ambiguous active object">
-<video src="clips/c19.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_88a58b3b @ 512</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.79 · 接触=0.24m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_8c0caf6c_656_wrong/ambiguous active object">
-<video src="clips/c20.mp4" controls loop muted playsinline></video>
+<video src="clips/c2.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -316,7 +64,7 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_8c0caf6c_720_wrong/ambiguous active object">
-<video src="clips/c21.mp4" controls loop muted playsinline></video>
+<video src="clips/c3.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -329,22 +77,8 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_8c0caf6c_1072_wrong/ambiguous active object">
-<video src="clips/c22.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>红铲子(spatula_red)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_8c0caf6c @ 1072</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.96 · 接触=0.18m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_911a4ba5_496_wrong/ambiguous active object">
-<video src="clips/c23.mp4" controls loop muted playsinline></video>
+<video src="clips/c4.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -357,22 +91,8 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_911a4ba5_1072_wrong/ambiguous active object">
-<video src="clips/c24.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>白板擦(whiteboard_eraser)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_911a4ba5 @ 1072</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.82 · 接触=0.05m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_b1e71d7f_176_wrong/ambiguous active object">
-<video src="clips/c25.mp4" controls loop muted playsinline></video>
+<video src="clips/c5.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -385,154 +105,14 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_b1e71d7f_496_wrong/ambiguous active object">
-<video src="clips/c26.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_1b21bb01_608_wrong/ambiguous active object">
+<video src="clips/c6.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_b1e71d7f @ 496</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.24m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_b1e71d7f_1088_wrong/ambiguous active object">
-<video src="clips/c27.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_b1e71d7f @ 1088</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.24m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_e71e2f24_128_wrong/ambiguous active object">
-<video src="clips/c28.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>咖啡壶(coffee_pot)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_e71e2f24 @ 128</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.88 · 接触=0.24m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_ea91844d_1168_wrong/ambiguous active object">
-<video src="clips/c29.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>键盘(keyboard)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_ea91844d @ 1168</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.82 · 接触=0.24m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_0ecbf39f_832_wrong/ambiguous active object">
-<video src="clips/c30.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>灰色支架(holder_gray)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_0ecbf39f @ 832</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.85 · 接触=0.21m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_573b2de6_944_wrong/ambiguous active object">
-<video src="clips/c31.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>鼠标(mouse)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_573b2de6 @ 944</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.38 · 接触=0.08m · 切换=0.66</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_927973d7_592_contact/timing mismatch">
-<video src="clips/c32.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
 <tr><td>物体</td><td>橙汁盒(carton_oj)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_927973d7 @ 592</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.94 · 接触=0.64m · 切换=0.25</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_927973d7_1072_contact/timing mismatch">
-<video src="clips/c33.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>土豆压泥器(potato_masher)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_927973d7 @ 1072</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.94 · 接触=0.64m · 切换=0.22</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_0e02bf39_464_contact/timing mismatch">
-<video src="clips/c34.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_0e02bf39 @ 464</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.99 · 接触=0.64m · 切换=0.44</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_573b2de6_32_contact/timing mismatch">
-<video src="clips/c35.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>键盘(keyboard)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_573b2de6 @ 32</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.19 · 接触=0.63m · 切换=0.00</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_6d15aa57_384_contact/timing mismatch">
-<video src="clips/c36.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>鸟屋玩具(birdhouse_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_6d15aa57 @ 384</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.39 · 接触=0.60m · 切换=0.22</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_1b21bb01 @ 608</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.87 · 接触=0.22m · 切换=0.62</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
@@ -540,7 +120,7 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_1b21bb01_1072_wrong/ambiguous active object">
-<video src="clips/c37.mp4" controls loop muted playsinline></video>
+<video src="clips/c7.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -553,70 +133,42 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_24af5475_1120_wrong/ambiguous active object">
-<video src="clips/c38.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_1b21bb01_1184_wrong/ambiguous active object">
+<video src="clips/c8.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>黑色支架(holder_black)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_24af5475 @ 1120</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.96 · 接触=0.12m · 切换=0.62</td></tr>
+<tr><td>物体</td><td>番茄酱罐头(can_tomato_sauce)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_1b21bb01 @ 1184</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.10m · 切换=0.62</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_37e30628_336_wrong/ambiguous active object">
-<video src="clips/c39.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_5f2583e0_192_wrong/ambiguous active object">
+<video src="clips/c9.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>键盘(keyboard)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_37e30628 @ 336</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.16m · 切换=0.62</td></tr>
+<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_5f2583e0 @ 192</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.98 · 接触=0.27m · 切换=0.62</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_5bb7cc2a_624_wrong/ambiguous active object">
-<video src="clips/c40.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_8c0caf6c_1184_wrong/ambiguous active object">
+<video src="clips/c10.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>哑铃(5磅)(dumbbell_5lb)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_5bb7cc2a @ 624</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.79 · 接触=0.19m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_911a4ba5_0_wrong/ambiguous active object">
-<video src="clips/c41.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>whiteboard_marker(whiteboard_marker)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_911a4ba5 @ 0</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.86 · 接触=0.10m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_9e03121a_752_wrong/ambiguous active object">
-<video src="clips/c42.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>沙拉酱瓶(bottle_ranch)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_9e03121a @ 752</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.25m · 切换=0.62</td></tr>
+<tr><td>物体</td><td>can_parmesan(can_parmesan)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_8c0caf6c @ 1184</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.23m · 切换=0.62</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
@@ -624,7 +176,7 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_e27ad19f_176_wrong/ambiguous active object">
-<video src="clips/c43.mp4" controls loop muted playsinline></video>
+<video src="clips/c11.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -637,126 +189,28 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_e71e2f24_752_wrong/ambiguous active object">
-<video src="clips/c44.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0010_573b2de6_176_wrong/ambiguous active object">
+<video src="clips/c12.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>木勺(spoon_wooden)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_e71e2f24 @ 752</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.21m · 切换=0.62</td></tr>
+<tr><td>物体</td><td>whiteboard_marker(whiteboard_marker)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_573b2de6 @ 176</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.11m · 切换=0.62</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_0ecbf39f_304_wrong/ambiguous active object">
-<video src="clips/c45.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_0e02bf39_672_wrong/ambiguous active object">
+<video src="clips/c13.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>木勺(spoon_wooden)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_0ecbf39f @ 304</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.92 · 接触=0.11m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_160e551c_544_wrong/ambiguous active object">
-<video src="clips/c46.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>Aria眼镜(小)(aria_small)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_160e551c @ 544</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.71 · 接触=0.12m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_6d15aa57_1008_wrong/ambiguous active object">
-<video src="clips/c47.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>哑铃(5磅)(dumbbell_5lb)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_6d15aa57 @ 1008</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.08m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_8ff3e5c4_1152_wrong/ambiguous active object">
-<video src="clips/c48.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>手机(cellphone)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_8ff3e5c4 @ 1152</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.60 · 接触=0.19m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_b152143e_992_wrong/ambiguous active object">
-<video src="clips/c49.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>键盘(keyboard)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_b152143e @ 992</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.90 · 接触=0.12m · 切换=0.62</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_e481fd15_816_contact/timing mismatch">
-<video src="clips/c50.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>Aria眼镜(小)(aria_small)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_e481fd15 @ 816</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.07 · 接触=0.58m · 切换=0.12</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_927973d7_1008_contact/timing mismatch">
-<video src="clips/c51.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
-<tr><td>物体</td><td>土豆压泥器(potato_masher)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_927973d7 @ 1008</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.56m · 切换=0.25</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_0e02bf39_784_contact/timing mismatch">
-<video src="clips/c52.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>接触/时序不匹配 (contact/timing mismatch)</b></td></tr>
-<tr><td>触发原因</td><td>手一直够不到物体(接触松/缺失)</td></tr>
 <tr><td>物体</td><td>灰色支架(holder_gray)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_0e02bf39 @ 784</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.56m · 切换=0.25</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_0e02bf39 @ 672</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.96 · 接触=0.18m · 切换=0.59</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
@@ -764,7 +218,7 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_247b5403_224_wrong/ambiguous active object">
-<video src="clips/c53.mp4" controls loop muted playsinline></video>
+<video src="clips/c14.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -777,14 +231,14 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_88a58b3b_752_wrong/ambiguous active object">
-<video src="clips/c54.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_911a4ba5_672_wrong/ambiguous active object">
+<video src="clips/c15.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>Aria眼镜(小)(aria_small)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_88a58b3b @ 752</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.61 · 接触=0.21m · 切换=0.59</td></tr>
+<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_911a4ba5 @ 672</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.06m · 切换=0.59</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
@@ -792,7 +246,7 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0009_cf323827_960_wrong/ambiguous active object">
-<video src="clips/c55.mp4" controls loop muted playsinline></video>
+<video src="clips/c16.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
@@ -805,42 +259,14 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_e71e2f24_432_wrong/ambiguous active object">
-<video src="clips/c56.mp4" controls loop muted playsinline></video>
+</div></div><div class="card" data-id="P0009_e71e2f24_544_wrong/ambiguous active object">
+<video src="clips/c17.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>food_vegetables(food_vegetables)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_e71e2f24 @ 432</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.83 · 接触=0.11m · 切换=0.59</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0009_ea91844d_608_wrong/ambiguous active object">
-<video src="clips/c57.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0009_ea91844d @ 608</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.73 · 接触=0.07m · 切换=0.59</td></tr>
-</table>
-<div class="controls">
- <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
- <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
- <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
- <textarea class="f-note" placeholder="备注(可选)"></textarea>
-</div></div><div class="card" data-id="P0010_1573a837_992_wrong/ambiguous active object">
-<video src="clips/c58.mp4" controls loop muted playsinline></video>
-<table>
-<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
-<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
-<tr><td>物体</td><td>键盘(keyboard)</td></tr>
-<tr><td>序列 / 起始帧</td><td>P0010_1573a837 @ 992</td></tr>
-<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.19m · 切换=0.59</td></tr>
+<tr><td>物体</td><td>咖啡壶(coffee_pot)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_e71e2f24 @ 544</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.13m · 切换=0.59</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
@@ -848,13 +274,587 @@ td{padding:.15rem .3rem;border-bottom:1px solid #f3f3f3} td:first-child{color:#8
  <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
  <textarea class="f-note" placeholder="备注(可选)"></textarea>
 </div></div><div class="card" data-id="P0010_1573a837_1104_wrong/ambiguous active object">
-<video src="clips/c59.mp4" controls loop muted playsinline></video>
+<video src="clips/c18.mp4" controls loop muted playsinline></video>
 <table>
 <tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
 <tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
 <tr><td>物体</td><td>mug_patterned(mug_patterned)</td></tr>
 <tr><td>序列 / 起始帧</td><td>P0010_1573a837 @ 1104</td></tr>
 <tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.07m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_1573a837_1168_wrong/ambiguous active object">
+<video src="clips/c19.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>键盘(keyboard)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_1573a837 @ 1168</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.96 · 接触=0.19m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_160e551c_864_wrong/ambiguous active object">
+<video src="clips/c20.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>花瓶(vase)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_160e551c @ 864</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.79 · 接触=0.20m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_160e551c_1088_wrong/ambiguous active object">
+<video src="clips/c21.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>白板擦(whiteboard_eraser)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_160e551c @ 1088</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.02m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_1c9fe708_1040_wrong/ambiguous active object">
+<video src="clips/c22.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>whiteboard_marker(whiteboard_marker)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_1c9fe708 @ 1040</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.90 · 接触=0.12m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_656_wrong/ambiguous active object">
+<video src="clips/c23.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>黑色支架(holder_black)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_573b2de6 @ 656</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.83 · 接触=0.12m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_b152143e_144_wrong/ambiguous active object">
+<video src="clips/c24.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_b152143e @ 144</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.98 · 接触=0.07m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_fd1891a8_672_wrong/ambiguous active object">
+<video src="clips/c25.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>烧瓶(flask)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_fd1891a8 @ 672</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.17m · 切换=0.59</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_0e02bf39_880_wrong/ambiguous active object">
+<video src="clips/c26.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_0e02bf39 @ 880</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.84 · 接触=0.21m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_247b5403_832_wrong/ambiguous active object">
+<video src="clips/c27.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>黑色支架(holder_black)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_247b5403 @ 832</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.85 · 接触=0.07m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_24af5475_1072_wrong/ambiguous active object">
+<video src="clips/c28.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>白板擦(whiteboard_eraser)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_24af5475 @ 1072</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.09m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_5bb7cc2a_592_wrong/ambiguous active object">
+<video src="clips/c29.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>DVD遥控器(dvd_remote)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_5bb7cc2a @ 592</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.96 · 接触=0.06m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_5f2583e0_832_wrong/ambiguous active object">
+<video src="clips/c30.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_5f2583e0 @ 832</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.94 · 接触=0.26m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_88a58b3b_240_wrong/ambiguous active object">
+<video src="clips/c31.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_88a58b3b @ 240</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.83 · 接触=0.05m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_928_wrong/ambiguous active object">
+<video src="clips/c32.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>灰色支架(holder_gray)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_8c95667c @ 928</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.99 · 接触=0.13m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_1200_wrong/ambiguous active object">
+<video src="clips/c33.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>竹盘(plate_bamboo)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_8c95667c @ 1200</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.74 · 接触=0.23m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_911a4ba5_800_wrong/ambiguous active object">
+<video src="clips/c34.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>whiteboard_marker(whiteboard_marker)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_911a4ba5 @ 800</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.84 · 接触=0.05m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_927973d7_976_wrong/ambiguous active object">
+<video src="clips/c35.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>键盘(keyboard)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_927973d7 @ 976</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.73 · 接触=0.32m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_927973d7_1152_wrong/ambiguous active object">
+<video src="clips/c36.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>土豆压泥器(potato_masher)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_927973d7 @ 1152</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.78 · 接触=0.26m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_cf323827_384_wrong/ambiguous active object">
+<video src="clips/c37.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>can_parmesan(can_parmesan)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_cf323827 @ 384</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.98 · 接触=0.10m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_cf323827_1104_wrong/ambiguous active object">
+<video src="clips/c38.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>木勺(spoon_wooden)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_cf323827 @ 1104</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.08m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_0ecbf39f_32_wrong/ambiguous active object">
+<video src="clips/c39.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>橙汁盒(carton_oj)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_0ecbf39f @ 32</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.98 · 接触=0.14m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_573b2de6_560_wrong/ambiguous active object">
+<video src="clips/c40.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>黑色支架(holder_black)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_573b2de6 @ 560</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.16m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_8ff3e5c4_304_wrong/ambiguous active object">
+<video src="clips/c41.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>whiteboard_marker(whiteboard_marker)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_8ff3e5c4 @ 304</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.85 · 接触=0.05m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_8ff3e5c4_576_wrong/ambiguous active object">
+<video src="clips/c42.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>手机(cellphone)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_8ff3e5c4 @ 576</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.91 · 接触=0.04m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_99385ad8_400_wrong/ambiguous active object">
+<video src="clips/c43.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>键盘(keyboard)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_99385ad8 @ 400</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.28m · 切换=0.56</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_02511c2f_144_wrong/ambiguous active object">
+<video src="clips/c44.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>白马克杯(mug_white)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_02511c2f @ 144</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.13m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_247b5403_672_wrong/ambiguous active object">
+<video src="clips/c45.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>黑色支架(holder_black)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_247b5403 @ 672</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.98 · 接触=0.04m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_24af5475_512_wrong/ambiguous active object">
+<video src="clips/c46.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>mug_patterned(mug_patterned)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_24af5475 @ 512</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.13m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_24af5475_784_wrong/ambiguous active object">
+<video src="clips/c47.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>Aria眼镜(小)(aria_small)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_24af5475 @ 784</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.88 · 接触=0.09m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_5bb7cc2a_912_wrong/ambiguous active object">
+<video src="clips/c48.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>哑铃(5磅)(dumbbell_5lb)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_5bb7cc2a @ 912</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.70 · 接触=0.11m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_8c95667c_336_wrong/ambiguous active object">
+<video src="clips/c49.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>白马克杯(mug_white)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_8c95667c @ 336</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.89 · 接触=0.20m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_927973d7_16_wrong/ambiguous active object">
+<video src="clips/c50.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>mug_patterned(mug_patterned)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_927973d7 @ 16</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.15m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_9e03121a_0_wrong/ambiguous active object">
+<video src="clips/c51.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>番茄酱罐头(can_tomato_sauce)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_9e03121a @ 0</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.94 · 接触=0.05m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_9e03121a_144_wrong/ambiguous active object">
+<video src="clips/c52.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>土豆压泥器(potato_masher)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_9e03121a @ 144</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.22m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_9e03121a_496_wrong/ambiguous active object">
+<video src="clips/c53.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>can_soup(can_soup)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_9e03121a @ 496</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.04m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_b7d8c222_992_wrong/ambiguous active object">
+<video src="clips/c54.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>红铲子(spatula_red)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_b7d8c222 @ 992</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.75 · 接触=0.12m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_e71e2f24_304_wrong/ambiguous active object">
+<video src="clips/c55.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>food_vegetables(food_vegetables)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_e71e2f24 @ 304</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.52 · 接触=0.05m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_e71e2f24_608_wrong/ambiguous active object">
+<video src="clips/c56.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>木勺(spoon_wooden)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_e71e2f24 @ 608</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.82 · 接触=0.07m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_ea91844d_0_wrong/ambiguous active object">
+<video src="clips/c57.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>咖啡壶(coffee_pot)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_ea91844d @ 0</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.93 · 接触=0.19m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0009_ea91844d_288_wrong/ambiguous active object">
+<video src="clips/c58.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>拼图玩具(puzzle_toy)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0009_ea91844d @ 288</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.95 · 接触=0.09m · 切换=0.53</td></tr>
+</table>
+<div class="controls">
+ <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
+ <label>原因对吗 <select class="f-reason"><option value="">?</option><option value="ok">对</option><option value="wrong">不对</option></select></label>
+ <label>改成 <select class="f-fix"><option value="">—</option><option value="wrong/ambiguous active object">活动物体错/模糊 (wrong/ambiguous active object)</option><option value="contact/timing mismatch">接触/时序不匹配 (contact/timing mismatch)</option><option value="cross-clip semantic mismatch">跨片段语义错 (cross-clip semantic mismatch)</option><option value="gaze-hand coordination mismatch">视线-手协调错 (gaze-hand coordination mismatch)</option><option value="plausible motion but wrong interaction context">运动合理但交互语境错 (plausible motion but wrong context)</option></select></label>
+ <textarea class="f-note" placeholder="备注(可选)"></textarea>
+</div></div><div class="card" data-id="P0010_0ecbf39f_1152_wrong/ambiguous active object">
+<video src="clips/c59.mp4" controls loop muted playsinline></video>
+<table>
+<tr><td>自动分类</td><td><b>活动物体错/模糊 (wrong/ambiguous active object)</b></td></tr>
+<tr><td>触发原因</td><td>最近物体来回切换(操作目标不明)</td></tr>
+<tr><td>物体</td><td>牛奶盒(carton_milk)</td></tr>
+<tr><td>序列 / 起始帧</td><td>P0010_0ecbf39f @ 1152</td></tr>
+<tr><td>信号值</td><td>视线对齐=+0.97 · 接触=0.19m · 切换=0.53</td></tr>
 </table>
 <div class="controls">
  <label>判定 <select class="f-verdict"><option value="">?</option><option value="real">真错</option><option value="false">假错</option></select></label>
